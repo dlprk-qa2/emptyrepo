@@ -5,11 +5,6 @@ terraform {
       version = "~> 3.27"
     }
 
-
-        pgp = {
-      source = "ekristen/pgp"
-    }
-
   }
 
   required_version = ">= 0.14.9"
