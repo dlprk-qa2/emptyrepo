@@ -274,7 +274,7 @@ resource "aws_iam_group_membership" "admins" {
 
 
 module "elb_example_complete" {
-  source  = "terraform-aws-modules/elb/aws//examples/complete"
+  source  = "hashicorp/consul/aws"
   version = "3.0.1"
 }
 
