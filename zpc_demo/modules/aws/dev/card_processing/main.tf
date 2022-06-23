@@ -273,10 +273,10 @@ resource "aws_iam_group_membership" "admins" {
 
 
 
-module "elb_example_complete" {
-  source  = "<meta name="terraform-get" content="github.com/hashicorp/example" />
-"
-  version = "3.0.1"
+ module "consul" {
+  source = "gcs::https://www.googleapis.com/storage/v1/modules/foomodule.zip"
+}
+
 }
 
 
