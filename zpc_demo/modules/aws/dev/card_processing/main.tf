@@ -273,10 +273,11 @@ resource "aws_iam_group_membership" "admins" {
 
 
 
-module "elb_example_complete" {
-  source  = "terraform-aws-modules/elb/aws//examples/complete"
-  version = "3.0.1"
+module "consul_example_example-with-custom-asg-role" {
+  source  = "hashicorp/consul/aws//examples/example-with-custom-asg-role"
+  version = "0.11.0"
 }
+
 
 
 ##### EC2 instance with GPU to trigger crypto mining threat: 
