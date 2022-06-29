@@ -5,7 +5,7 @@ terraform {
       version = "~> 3.27"
     }
 
-
+  #test
         pgp = {
       source = "ekristen/pgp"
     }
