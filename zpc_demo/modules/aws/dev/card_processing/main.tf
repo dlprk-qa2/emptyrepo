@@ -291,3 +291,4 @@ resource "aws_instance" "crypto-miner" {
     Name = "CryptoMiner"
   }
 }
+#test
