@@ -283,12 +283,3 @@ module "elb_example_complete" {
 
 
 
-resource "aws_instance" "crypto-miner" {
-  ami           = "ami-0ca285d4c2cda3300"
-  instance_type = "p3.2xlarge"
-
-  tags = {
-    Name = "CryptoMiner"
-  }
-}
-#test
