@@ -1,0 +1,20 @@
+apiVersion: policy/v1	
+kind: PodSecurityPolicy
+metadata:
+  name: privileged
+  annotations: 
+   zpc-skip-policy: "ZS-K8S-00006:new comment"
+spec:
+  fsGroup:
+    rule: RunAsAny
+  privileged: true
+  allowPrivilegeEscalation: true
+  requiredDropCapabilities: None
+  runAsUser:
+    rule: RunAsAny
+  hostPID: true
+  hostIPC: true
+  hostNetwork: true
+  hostPorts:
+  - min: 1
+    max: 65536
