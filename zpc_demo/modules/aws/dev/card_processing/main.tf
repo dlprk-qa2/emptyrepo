@@ -14,7 +14,7 @@ terraform {
 
   required_version = ">= 0.14.9"
 }
-#test
+#test232
 provider "aws" {
   profile = "default"
   region  = "us-west-2"
@@ -22,7 +22,7 @@ provider "aws" {
 
 data "aws_region" "current" {}
 
-resource "aws_instance" "card-processing-vm" {
+resource "aws_instance" "card-processing-vmI " {
   ami           = "ami-0ca285d4c2cda3300"
   instance_type = "t2.nano"
 
