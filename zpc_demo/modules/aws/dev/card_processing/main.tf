@@ -271,12 +271,12 @@ resource "aws_iam_group_membership" "admins" {
 ##### EC2 instance behing load balancer (ELB):
 
 
-
-
-module "elb_example_complete" {
-  source  = "terraform-aws-modules/elb/aws//examples/complete"
-  version = "3.0.1"
+module "security-group_example_complete" {
+  source  = "terraform-aws-modules/security-group/aws//examples/complete"
+  version = "4.13.0"
 }
+
+
 
   
 
